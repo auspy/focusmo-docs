@@ -1,0 +1,416 @@
+# FocusMode Features Documentation
+
+This document provides a comprehensive overview of all features available in FocusMode, organized by category. Each feature can be enabled or disabled individually in the Features tab of preferences, allowing you to customize your focus experience.
+
+## Features Overview
+
+| Feature | Tier | Description |
+|---------|------|-------------|
+| [Hide Disabled Features](#hide-disabled-features) | Pro | Removes disabled features from the UI for a cleaner experience |
+| [Pomodoro Timer](#pomodoro-timer) | Free | Manage work sessions and breaks automatically to prevent burnout |
+| [Workspaces](#workspaces) | Pro | One-click environment switching that blocks distractions |
+| [Daily Task Reset](#daily-task-reset) | Pro | Automatically archives incomplete tasks to backlog daily |
+| [Breathing Intro](#breathing-intro) | Free | Begin focus sessions with guided breathing exercises |
+| [Menu Bar Mode](#menu-bar-mode) | Free | Hide dock icon and run exclusively from menu bar |
+| [Show Floating Button](#show-floating-button) | Free | Display a quick access button on your desktop |
+| [Auto Text Selection Menu](#auto-text-selection-menu) | Free | Automatically show menu when text is selected |
+| [Timeline View](#timeline-view) | Free | Display visual timeline showing daily schedule and current time |
+| [Analytics](#analytics) | Free* | Collect usage data and provide personalized focus insights |
+| [Sync Devices](#sync-devices-in-maintenance) | Pro | Synchronize settings and data across multiple devices |
+| [Apple Reminders Integration](#apple-reminders-integration) | Pro | Import and synchronize tasks from Apple Reminders |
+| [Activity Tracking](#activity-tracking) | Pro | Monitor application usage and productivity patterns |
+| [Calendar Integration](#calendar-integration) | Pro | Synchronize tasks with Apple Calendar and coordinate sessions |
+| [Meeting Notifications](#meeting-notifications) | Pro | Receive notifications for upcoming meetings with context |
+| [Daily Reminders](#daily-reminders) | Free | Send customizable daily notifications to maintain focus habits |
+
+*Analytics is required for free users, optional for Pro users
+
+## General Settings
+
+### Hide Disabled Features
+
+**Available to:** Pro users only
+
+**Permissions required:** None
+
+**Purpose:** Removes disabled features from the application interface for a cleaner, more minimalist experience.
+
+When enabled, any features you've turned off will be completely hidden from menus, buttons, and interfaces throughout the app. This creates a streamlined environment tailored to your specific workflow without visual clutter from unused functionality.
+
+## Core Features
+
+### Pomodoro Timer
+
+**Available to:** All users (Free tier includes basic functionality)
+
+**Permissions required:** None
+
+**Purpose:** Manage work sessions and breaks automatically to prevent burnout and maintain sustainable productivity.
+
+The Pomodoro Timer implements the time-tested Pomodoro Technique, alternating between focused work sessions and scheduled breaks. When enabled, the timer runs in the background and manages your work rhythm automatically.
+
+**How it works:**
+- Starts focused work sessions of configurable duration
+- Automatically triggers break notifications when work sessions end
+- Tracks break compliance and warns if breaks are skipped
+- Integrates with all other features to pause/resume during breaks
+- Can run in floating timer mode for constant visibility
+
+**Combinations with other features:**
+- **+ Workspaces:** Automatically blocks distracting apps during work sessions and unblocks during breaks
+- **+ Breathing Intro:** Begins each work session with a calming breathing exercise
+- **+ Daily Reminders:** Sends notifications to start your daily Pomodoro sessions
+- **+ Analytics:** Tracks session completion rates and break compliance patterns
+- **+ Menu Bar Mode:** Shows timer progress in menu bar without dock presence
+
+### Workspaces
+
+**Available to:** Pro users only
+
+**Permissions required:** Accessibility access
+
+**Purpose:** One-click environment switching that blocks distractions and opens work-relevant applications.
+
+Workspaces create predefined computing environments for different types of work. Each workspace defines which applications should be accessible and which should be blocked during focus sessions.
+
+**How it works:**
+- Configure multiple workspaces (e.g., "Deep Work", "Writing", "Research")
+- Define allowed and blocked applications for each workspace
+- One-click activation blocks distracting apps and can open required work apps
+- Automatically positions application windows according to saved layouts
+- Integrates with system application blocking to prevent access to distracting software
+
+**Combinations with other features:**
+- **+ Pomodoro Timer:** Automatically activates workspace when work session begins
+- **+ Auto Text Selection Menu:** Quick task capture works only with allowed applications
+- **+ Calendar Integration:** Can auto-select workspace based on calendar events
+- **+ Activity Tracking:** Monitors application usage within workspace constraints
+- **+ Floating Button:** Provides quick workspace switching without opening main window
+
+### Daily Task Reset
+
+**Available to:** Pro users only
+
+**Permissions required:** None
+
+**Purpose:** Automatically archives incomplete tasks to backlog and provides a fresh start each day.
+
+This feature prevents task lists from becoming overwhelming by automatically moving unfinished tasks to a backlog at a configured time each day. This maintains the psychological benefit of starting each day with a clean slate.
+
+**How it works:**
+- Runs automatically at a time you configure (default: end of work day)
+- Moves all incomplete tasks from today's list to the backlog
+- Preserves task history and completion statistics
+- Allows manual restoration of important tasks from backlog
+- Sends optional notifications about the reset process
+
+**Combinations with other features:**
+- **+ Apple Reminders Integration:** Syncs reset behavior with Apple Reminders lists
+- **+ Daily Reminders:** Sends notification before reset occurs
+- **+ Analytics:** Tracks daily completion rates and backlog patterns
+- **+ Calendar Integration:** Can delay reset if active calendar events are detected
+
+### Breathing Intro
+
+**Available to:** All users
+
+**Permissions required:** None
+
+**Purpose:** Begin focus sessions with guided breathing exercises to enhance concentration and reduce stress.
+
+The Breathing Intro provides a brief mindfulness moment before starting work, using proven breathing techniques to improve focus and reduce anxiety. This creates a transition ritual that helps separate focused work time from distractions.
+
+**How it works:**
+- Displays guided breathing animation when starting focus sessions
+- Offers multiple breathing patterns (4-7-8, box breathing, etc.)
+- Configurable duration from 30 seconds to 5 minutes
+- Can be skipped if immediate focus is needed
+- Tracks usage and provides gentle encouragement
+
+**Combinations with other features:**
+- **+ Pomodoro Timer:** Automatically triggers before each work session
+- **+ Workspaces:** Runs after workspace activation but before work begins
+- **+ Analytics:** Measures correlation between breathing intro usage and session success
+- **+ Daily Reminders:** Can include breathing exercises in daily routine notifications
+
+## UI Controls
+
+### Menu Bar Mode
+
+**Available to:** All users
+
+**Permissions required:** None (restart required)
+
+**Purpose:** Hide the dock icon and run FocusMode exclusively from the menu bar for a minimal desktop presence.
+
+Menu Bar Mode reduces visual clutter by removing FocusMode from the dock while keeping full functionality accessible through the menu bar icon. This is ideal for users who prefer a minimal dock or have limited screen space.
+
+**How it works:**
+- Removes FocusMode icon from the dock
+- Adds comprehensive menu bar icon with quick actions
+- Shows timer progress and session status in menu bar
+- Provides access to all major features through menu bar dropdown
+- Requires application restart to take effect
+
+**Combinations with other features:**
+- **+ Pomodoro Timer:** Shows timer countdown directly in menu bar
+- **+ Floating Button:** Provides alternative quick access when menu bar is hidden
+- **+ Meeting Notifications:** Delivers notifications through menu bar without dock presence
+- **+ Activity Tracking:** Menu bar icon reflects current focus/break status
+
+### Show Floating Button
+
+**Available to:** All users
+
+**Permissions required:** None
+
+**Purpose:** Display a quick access button on the desktop for immediate access to focus controls.
+
+The floating button provides instant access to start/stop focus sessions, add tasks, and switch workspaces without opening the main application window. It remains visible across all desktop spaces and applications.
+
+**How it works:**
+- Shows as a small, translucent button on the desktop
+- Remains above all other windows but doesn't block content
+- Click to reveal quick action menu
+- Customizable position and opacity
+- Can be temporarily hidden by holding a modifier key
+
+**Combinations with other features:**
+- **+ Workspaces:** Quick workspace switching without opening main window
+- **+ Pomodoro Timer:** Start/stop/pause timer directly from desktop
+- **+ Auto Text Selection Menu:** Alternative access point for task capture
+- **+ Menu Bar Mode:** Essential when dock icon is hidden
+- **+ Timeline View:** Quick overview of daily schedule without main window
+
+### Auto Text Selection Menu
+
+**Available to:** All users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Automatically display task capture menu when text is selected in supported applications.
+
+This feature monitors text selection across applications and provides contextual task capture capabilities. When you highlight text in emails, documents, or web pages, a small menu appears allowing instant task creation from the selected content.
+
+**How it works:**
+- Monitors text selection events across all applications
+- Appears as small popup menu near text selection
+- Extracts context from selection to pre-populate task details
+- Works with email, documents, web browsers, and other text applications
+- Respects application focus and workspace restrictions
+
+**Combinations with other features:**
+- **+ Workspaces:** Only functions within allowed applications for current workspace
+- **+ Apple Reminders Integration:** Can create tasks in Apple Reminders instead of FocusMode
+- **+ Activity Tracking:** Tracks which applications generate the most tasks
+- **+ Timeline View:** New tasks automatically appear in timeline context
+
+### Timeline View
+
+**Available to:** All users
+
+**Permissions required:** None
+
+**Purpose:** Display a visual timeline in the main window showing daily schedule and current time context.
+
+The Timeline View provides a horizontal timeline representation of your day, showing scheduled events, focus sessions, breaks, and tasks in chronological context. This helps with time awareness and planning.
+
+**How it works:**
+- Shows current day as horizontal timeline
+- Displays calendar events, tasks, and focus sessions
+- Indicates current time with a moving marker
+- Shows estimated completion times for tasks
+- Updates in real-time as day progresses
+
+**Combinations with other features:**
+- **+ Calendar Integration:** Shows calendar events alongside focus sessions
+- **+ Pomodoro Timer:** Displays work/break periods on timeline
+- **+ Meeting Notifications:** Highlights upcoming meetings
+- **+ Daily Task Reset:** Shows when daily reset will occur
+- **+ Activity Tracking:** Displays periods of high/low productivity
+
+## Sync & Data
+
+### Analytics
+
+**Available to:** All users (required for free users, optional for Pro users)
+
+**Permissions required:** None
+
+**Purpose:** Collect anonymous usage data to improve the app and provide personalized focus insights.
+
+Analytics tracks your focus patterns, session completion rates, and productivity trends to provide insights into your work habits. For free users, this is required and helps support continued development. Pro users can disable analytics while retaining local insights.
+
+**How it works:**
+- Tracks session durations, completion rates, and break compliance
+- Monitors feature usage patterns and effectiveness
+- Collects anonymous application interaction data
+- Provides weekly/monthly productivity reports
+- Stores data locally with optional cloud backup for Pro users
+
+**Combinations with other features:**
+- **+ Pomodoro Timer:** Tracks session success rates and optimal session lengths
+- **+ Workspaces:** Measures workspace effectiveness and app blocking impact
+- **+ Breathing Intro:** Correlates breathing exercises with focus session success
+- **+ Activity Tracking:** Provides detailed productivity and distraction analysis
+- **+ Calendar Integration:** Analyzes meeting impact on focus time
+
+### Sync Devices (In Maintenance)
+
+**Available to:** Currently unavailable
+
+**Permissions required:** None (when available)
+
+**Purpose:** Synchronize settings, tasks, and analytics across multiple devices.
+
+This feature is temporarily unavailable while undergoing improvements. When restored, it will provide seamless synchronization of your FocusMode data across Mac devices.
+
+### Apple Reminders Integration
+
+**Available to:** Pro users only
+
+**Permissions required:** Reminders access
+
+**Purpose:** Import and synchronize tasks from Apple Reminders application.
+
+This integration allows FocusMode to work with your existing Apple Reminders workflow. Tasks created in either application stay synchronized, and you can manage everything from your preferred interface.
+
+**How it works:**
+- Connects to specified Apple Reminders lists
+- Imports tasks with due dates, priorities, and notes
+- Synchronizes completion status bidirectionally
+- Respects reminder notifications and deadlines
+- Configurable sync frequency and list selection
+
+**Combinations with other features:**
+- **+ Daily Task Reset:** Can apply reset behavior to Apple Reminders lists
+- **+ Auto Text Selection Menu:** Creates tasks in Apple Reminders instead of FocusMode
+- **+ Calendar Integration:** Coordinates with calendar events for deadline management
+- **+ Daily Reminders:** Incorporates Apple Reminders tasks in daily summaries
+
+### Activity Tracking
+
+**Available to:** Pro users only
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Monitor application usage and productivity patterns for detailed focus insights.
+
+Activity Tracking provides detailed analysis of how you spend time on your computer, identifying productivity patterns, distraction sources, and optimal work periods. This goes beyond basic timer tracking to understand actual computer usage.
+
+**How it works:**
+- Monitors active application usage throughout the day
+- Tracks keyboard and mouse activity to measure engagement
+- Identifies periods of high focus vs. distraction
+- Creates detailed reports on application usage patterns
+- Provides recommendations for workspace and schedule optimization
+
+**Combinations with other features:**
+- **+ Analytics:** Provides rich data for productivity insights and trends
+- **+ Workspaces:** Measures effectiveness of application blocking
+- **+ Pomodoro Timer:** Validates actual focus during timer sessions
+- **+ Timeline View:** Shows detailed activity patterns on daily timeline
+- **+ Calendar Integration:** Analyzes productivity around meeting times
+
+## Calendar
+
+### Calendar Integration
+
+**Available to:** Pro users only
+
+**Permissions required:** Calendar access
+
+**Purpose:** Synchronize tasks with Apple Calendar and coordinate focus sessions with scheduled events.
+
+Calendar Integration connects FocusMode with your existing calendar system, allowing automatic focus session scheduling around meetings and creating calendar events for important tasks and deadlines.
+
+**How it works:**
+- Reads calendar events to understand your schedule
+- Automatically schedules focus sessions in available time blocks
+- Creates calendar events for tasks with deadlines
+- Provides notifications for upcoming schedule conflicts
+- Respects different calendar priorities and categories
+
+**Combinations with other features:**
+- **+ Meeting Notifications:** Provides enhanced meeting awareness and preparation
+- **+ Timeline View:** Shows calendar events alongside focus sessions
+- **+ Pomodoro Timer:** Automatically adjusts session lengths based on available time
+- **+ Workspaces:** Can auto-select workspace based on calendar event type
+- **+ Daily Task Reset:** Delays reset if calendar shows active work events
+
+### Meeting Notifications
+
+**Available to:** Pro users only
+
+**Permissions required:** Calendar access, Notifications
+
+**Purpose:** Receive notifications for upcoming meetings with preparation time and context.
+
+Meeting Notifications prevent missed meetings by providing timely alerts with meeting context, preparation reminders, and automatic focus session management around meeting times.
+
+**How it works:**
+- Monitors calendar for upcoming meetings
+- Sends customizable alerts (5, 10, 15 minutes before)
+- Provides meeting context, participants, and agenda when available
+- Can automatically end focus sessions before meetings
+- Tracks meeting attendance and punctuality
+
+**Combinations with other features:**
+- **+ Calendar Integration:** Essential foundation for meeting awareness
+- **+ Pomodoro Timer:** Automatically pauses or ends sessions before meetings
+- **+ Workspaces:** Can switch to meeting-appropriate workspace
+- **+ Activity Tracking:** Measures productivity around meeting times
+- **+ Timeline View:** Shows meeting proximity and preparation time
+
+## Notifications & Reminders
+
+### Daily Reminders
+
+**Available to:** All users
+
+**Permissions required:** Notifications
+
+**Purpose:** Send customizable daily notifications to maintain consistent focus habits.
+
+Daily Reminders help establish routine by sending encouraging notifications to start focus sessions, take breaks, review progress, and maintain healthy work habits throughout the day.
+
+**How it works:**
+- Sends notifications at configured times throughout the day
+- Customizable message content and timing
+- Can include daily task summaries and progress updates
+- Respects Do Not Disturb and focus modes
+- Tracks reminder effectiveness and response rates
+
+**Combinations with other features:**
+- **+ Pomodoro Timer:** Reminds to start daily focus sessions
+- **+ Daily Task Reset:** Notifications before and after task reset
+- **+ Analytics:** Includes productivity insights in daily summaries
+- **+ Breathing Intro:** Can remind to use breathing exercises
+- **+ Apple Reminders Integration:** Incorporates Apple Reminders tasks in daily summaries
+
+## Feature Combinations and Workflows
+
+### The Complete Focus Setup
+For maximum productivity, combine:
+- **Workspaces** for distraction blocking
+- **Pomodoro Timer** for rhythm management
+- **Breathing Intro** for session preparation
+- **Analytics** for performance insights
+- **Menu Bar Mode** for minimal distraction
+
+### The Task Management Workflow
+For comprehensive task organization:
+- **Apple Reminders Integration** for unified task management
+- **Auto Text Selection Menu** for quick capture
+- **Daily Task Reset** for clean daily starts
+- **Timeline View** for time awareness
+- **Calendar Integration** for deadline coordination
+
+### The Minimal Setup
+For users who prefer simplicity:
+- **Pomodoro Timer** for basic focus sessions
+- **Floating Button** for quick access
+- **Daily Reminders** for routine maintenance
+- **Hide Disabled Features** for clean interface
+
+Each feature is designed to work independently, but the real power of FocusMode comes from thoughtful combinations that support your specific work style and productivity goals. 

@@ -1,0 +1,397 @@
+# Workspaces
+
+Workspaces are FocusMode's most powerful feature for creating distraction-free computing environments. Each workspace transforms your Mac into a focused work environment by blocking distracting applications, launching essential tools, and arranging windows for optimal productivity.
+
+## Workspace Features Overview
+
+| Feature | Availability | Description |
+|---------|--------------|-------------|
+| [App Blocking](#app-blocking) | Pro users | Prevent access to distracting applications during focus sessions |
+| [Website Blocking](#website-blocking) | Pro users | Control access to distracting websites through browser integration |
+| [Window Management](#window-management) | Pro users | Automatically arrange application windows for optimal workflow |
+| [Auto App Launching](#auto-app-launching) | Pro users | Automatically open essential applications when workspace activates |
+| [Auto-Trigger Settings](#auto-trigger-settings) | Pro users | Control when workspaces activate automatically |
+| [Developer Template](#developer-template) | Pro users | Pre-configured workspace for software development |
+| [Writer Template](#writer-template) | Pro users | Pre-configured workspace for content creation |
+| [Designer Template](#designer-template) | Pro users | Pre-configured workspace for creative work |
+| [Student Template](#student-template) | Pro users | Pre-configured workspace for research and studying |
+| [Business Template](#business-template) | Pro users | Pre-configured workspace for meetings and communication |
+| [Minimal Template](#minimal-template) | Pro users | Pre-configured workspace for maximum focus |
+
+## What Are Workspaces?
+
+Think of workspaces as different "modes" for your computer. Just like you might have different physical workspaces for different types of work, FocusMode workspaces let you create digital environments tailored to specific tasks.
+
+**Available to:** Pro users (Free users get 1 default workspace)
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Create focused computing environments tailored to specific work types.
+
+## Getting Started
+
+### Creating Your First Workspace
+
+1. **Open FocusMode Preferences** → **Workspaces** tab
+2. **Click the "+" button** to create a new workspace
+3. **Choose a template** or start from scratch
+4. **Give your workspace a name** (e.g., "Deep Writing" or "Client Calls")
+5. **Pick a color** to easily identify it
+6. **Configure the workspace** using the tabs below
+
+### Free vs Pro Access
+
+- **Free Users:** One default workspace with basic functionality
+- **Pro Users:** Unlimited workspaces with full management capabilities
+- **All Users:** Can use workspace selector and basic blocking features
+
+## Core Features
+
+### App Blocking
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Prevent access to distracting applications during focus sessions
+
+**How it works:**
+- **Blocklist Mode:** Specify apps to block, allow everything else
+- **Whitelist Mode:** Specify apps to allow, block everything else  
+- **Real-time Enforcement:** Blocked apps are terminated if launched during focus
+- **Smart Detection:** Automatically discovers installed applications
+
+**How to configure:**
+1. Select your workspace in preferences
+2. Click the "App Blocking" tab
+3. Choose blocking mode (blocklist or whitelist)
+4. Browse and add apps by clicking the "+" button
+5. Use the search bar to quickly find specific apps
+6. Toggle individual apps on/off as needed
+
+**Best practices:**
+- **Start simple:** Block major distractions first (social media, news, games)
+- **Blocklist for light focus:** Block specific problem apps
+- **Whitelist for deep focus:** Allow only essential work apps
+- **Review regularly:** Update your lists as you install new apps
+
+### Website Blocking
+
+**Available to:** Pro users
+
+**Permissions required:** None
+
+**Purpose:** Control access to distracting websites through browser integration
+
+**How it works:**
+- **Domain-based blocking:** Block entire websites (e.g., facebook.com)
+- **Browser integration:** Works with Safari, Chrome, Firefox, and other browsers
+- **Real-time monitoring:** Redirects blocked sites during focus sessions
+- **Pattern support:** Use wildcards like *.facebook.com to block subdomains
+
+**How to configure:**
+1. Open workspace settings → "Website Blocking" tab
+2. Choose blocking mode (blocklist or whitelist)
+3. Add domains by typing them in or importing from bookmarks
+4. Test blocking during a focus session
+
+**Common websites to block:**
+- **Social Media:** facebook.com, twitter.com, instagram.com, tiktok.com
+- **News Sites:** cnn.com, bbc.com, reddit.com, news.ycombinator.com
+- **Entertainment:** youtube.com, netflix.com, twitch.tv, spotify.com
+
+### Window Management
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Automatically arrange application windows for optimal workflow
+
+**Available positions:**
+- **Basic:** Center, Full Screen, Maximize
+- **Half Screen:** Left Half, Right Half, Top Half, Bottom Half
+- **Quarters:** Top Left, Top Right, Bottom Left, Bottom Right
+- **Thirds:** Left Third, Center Third, Right Third, and more
+- **Custom Sizes:** Small, Medium, Large, Ultra Wide, Tall, Square
+
+**How to set up:**
+1. Go to workspace → "App Launching" tab
+2. For each app, choose a window position from the dropdown
+3. Preview positions before applying
+4. Test during workspace activation
+
+**Popular layouts:**
+- **Side-by-side:** Code editor (Left Half) + Terminal (Right Half)
+- **Reference setup:** Main app (Left Two Thirds) + Notes (Right Third)
+- **Communication:** Slack (Top Left) + Email (Bottom Left) + Browser (Right Half)
+
+### Auto App Launching
+
+**Available to:** Pro users
+
+**Permissions required:** None
+
+**Purpose:** Automatically open essential applications when workspace activates
+
+**How it works:**
+- **Selective launching:** Choose which apps to open automatically
+- **Window positioning:** Each app gets its preferred layout
+- **Smart detection:** Only launches apps that are installed
+- **Launch order:** Apps open in sequence to prevent system overload
+
+**How to configure:**
+1. Navigate to workspace → "App Launching" tab
+2. Click "Add App" to select applications
+3. Set window position for each app
+4. Enable/disable individual apps with toggles
+5. Drag to reorder launch sequence
+
+**Tips:**
+- **Start with essentials:** Add your most important work apps first
+- **Test combinations:** Some apps work better in certain positions
+- **Consider startup time:** Heavy apps may need more time to position properly
+
+### Auto-Trigger Settings
+
+**Available to:** Pro users
+
+**Permissions required:** None
+
+**Purpose:** Control when workspaces activate automatically
+
+**Trigger modes:**
+
+#### Manual Mode
+- **When it activates:** Only when you manually select the workspace
+- **Best for:** Users who want full control over when workspaces activate
+- **Use case:** Workspaces for specific meetings or projects
+
+#### On Task Start Mode  
+- **When it activates:** When starting a task assigned to this workspace
+- **Best for:** Task-based workflows with consistent app requirements
+- **Use case:** "Development" workspace that activates when starting coding tasks
+
+#### Always Mode
+- **When it activates:** Whenever any focus session begins
+- **Best for:** Users who want consistent blocking regardless of task
+- **Use case:** "Minimal" workspace that blocks distractions for all work
+
+**How to configure:**
+1. Open workspace settings → "Auto-Trigger" tab
+2. Select your preferred trigger mode
+3. Test by starting different types of focus sessions
+4. Adjust based on your workflow needs
+
+## Workspace Templates
+
+FocusMode includes six pre-built templates to get you started quickly:
+
+### Developer Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for software development and coding
+
+**Apps included:** Visual Studio Code, Terminal, Slack, Chrome  
+**Layout:** Code editor (left), terminal (bottom right), communication (right)  
+**Blocks:** News and social media apps  
+**Trigger:** Activates when starting development tasks
+
+### Writer Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for content creation and writing
+
+**Apps included:** TextEdit, Bear, Microsoft Word  
+**Layout:** Writing app centered with minimal distractions  
+**Blocks:** Communication, social media, news  
+**Trigger:** Activates when starting writing tasks
+
+### Designer Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for creative work and design
+
+**Apps included:** Adobe Illustrator, Photoshop, Figma, Sketch  
+**Layout:** Design tools (left), reference apps (right)  
+**Blocks:** Communication and news apps  
+**Trigger:** Manual activation for maximum control
+
+### Student Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for research and studying
+
+**Apps included:** Notes, Chrome, Books, OneNote  
+**Layout:** Note-taking (left), research browser (right)  
+**Blocks:** Social media, entertainment, communication  
+**Trigger:** Activates when starting study tasks
+
+### Business Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for meetings and communication
+
+**Apps included:** Slack, Microsoft Teams, Chrome, Outlook  
+**Layout:** Communication tools (left), web/email (right)  
+**Blocks:** News, social media, entertainment  
+**Trigger:** Manual activation for meeting preparation
+
+### Minimal Template
+
+**Available to:** Pro users
+
+**Permissions required:** Accessibility access
+
+**Purpose:** Pre-configured workspace optimized for deep focus and distraction-free work
+
+**Apps included:** TextEdit only  
+**Layout:** Single centered app  
+**Blocks:** Almost everything for maximum focus  
+**Trigger:** Activates for all focus sessions
+
+### Using Templates
+
+1. **Click "New Workspace"** → **"Choose Template"**
+2. **Browse available templates** and select one that matches your work
+3. **Customize the template** by adding/removing apps or changing layouts
+4. **Missing apps** are automatically noted - install them later if needed
+5. **Save your customized workspace** with a descriptive name
+
+## Practical Workspace Ideas
+
+### Deep Work Workspace
+**Goal:** Maximum focus for complex tasks
+- **Apps to allow:** Only your primary work app
+- **Blocking:** Everything else (communication, entertainment, news)
+- **Layout:** Single full-screen app
+- **Best for:** Writing, analysis, creative work
+
+### Collaborative Work Workspace
+**Goal:** Balance communication with productivity
+- **Apps to allow:** Work apps + essential communication tools
+- **Blocking:** Social media and entertainment, but allow work chat
+- **Layout:** Side-by-side with work app and communication
+- **Best for:** Team projects, client work
+
+### Research Workspace
+**Goal:** Focused information gathering
+- **Apps to allow:** Browser, note-taking apps, document readers
+- **Blocking:** Social media but allow educational sites
+- **Layout:** Browser (main) + notes (sidebar)
+- **Best for:** Learning, competitive analysis, academic work
+
+### Meeting Workspace
+**Goal:** Professional video calls and presentations
+- **Apps to allow:** Video conferencing, presentation software, notes
+- **Blocking:** All distractions during call times
+- **Layout:** Video app (main) + notes (small window)
+- **Best for:** Client calls, team meetings, presentations
+
+## Best Practices
+
+### Workspace Design Tips
+
+**Start Simple**
+- Begin with blocking 3-5 major distractions
+- Add one essential work app
+- Test for a few days before making changes
+
+**Be Specific**
+- Name workspaces clearly ("Client Calls" not "Work Stuff")
+- Use descriptive colors (blue for technical, green for creative)
+- Set up workspaces for specific types of work, not general "work"
+
+**Regular Maintenance**
+- Review blocked apps monthly
+- Update app launch lists when you install new software
+- Archive workspaces you no longer use
+
+### Common Mistakes to Avoid
+
+**Over-blocking**
+- Don't block too many apps initially - you might need some for legitimate work
+- Start with obvious distractions and add more gradually
+
+**Under-blocking**
+- If you keep getting distracted, you probably need stricter blocking
+- Consider switching from blocklist to whitelist mode for deeper focus
+
+**Poor naming**
+- "Workspace 1" doesn't tell you what it's for
+- Use action-oriented names: "Morning Writing" or "Client Review"
+
+### Troubleshooting
+
+**Apps not launching:**
+- Check that apps are actually installed on your Mac
+- Verify FocusMode has accessibility permissions
+- Try launching the app manually first to test
+
+**Window positioning not working:**
+- Grant accessibility permissions in System Settings
+- Some apps resist positioning - try different position settings
+- Full-screen apps can't be repositioned
+
+**Blocking not effective:**
+- Make sure the workspace is actually active during focus sessions
+- Check your blocking mode (blocklist vs whitelist)
+- Some system apps can't be blocked for stability
+
+**Template apps missing:**
+- Templates automatically adapt to your installed apps
+- Install missing apps to unlock full template functionality
+- Customize templates to match your specific app preferences
+
+## Tips for Success
+
+### Building Good Workspace Habits
+
+1. **Create workspace switching routines**
+   - Switch workspaces when changing task types
+   - Use workspace colors as visual cues
+   - Set up keyboard shortcuts for quick switching
+
+2. **Combine with other FocusMode features**
+   - Link workspaces to specific task types
+   - Use with Pomodoro timer for timed focused work
+   - Enable analytics to track workspace effectiveness
+
+3. **Iterate and improve**
+   - Start with basic setups and refine over time
+   - Pay attention to what actually distracts you
+   - Adjust blocking rules based on real usage patterns
+
+### Advanced Workspace Strategies
+
+**Time-based workspaces:**
+- "Morning Deep Work" - strict blocking for early focus
+- "Afternoon Communications" - allow chat and email
+- "Evening Learning" - research-friendly with educational sites
+
+**Project-based workspaces:**
+- Set up temporary workspaces for major projects
+- Include project-specific apps and block irrelevant ones
+- Archive when projects complete
+
+**Context switching:**
+- Create "transition" workspaces between major task types
+- Use lighter blocking between focused work sessions
+- Build in buffer time for workspace switching
+
+Workspaces are most effective when they become a natural part of your workflow. Start simple, experiment with different configurations, and gradually build a system that truly supports your most productive work patterns. 
